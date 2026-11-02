@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+  --color-ink: #0c0a14;
+  --color-card: #15121f;
+  --color-paper: #f3effa;
+  --color-accent: #a78bfa;
+  --font-logo: "Bebas Neue", sans-serif;
+  --font-brand: "Uncial Antiqua", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-ink);
+  background-image: linear-gradient(to bottom, #0c0a14 0%, #17102b 55%, #241a45 100%);
+  background-repeat: no-repeat;
+  color: var(--color-paper);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+
+::selection {
+  background: rgba(167, 139, 250, 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
