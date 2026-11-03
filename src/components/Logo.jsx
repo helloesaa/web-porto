@@ -14,11 +14,11 @@ export default function Logo() {
           rx="21"
           ry="7"
           transform="rotate(-25 24 24)"
-          className="stroke-accent/40"
+          className="stroke-brand/40"
           strokeWidth="1.5"
         />
         {/* planet */}
-        <circle cx="24" cy="24" r="9" className="fill-accent" />
+        <circle cx="24" cy="24" r="9" className="fill-brand" />
         <circle cx="21" cy="21" r="3" className="fill-paper/30" />
         {/* front part of the orbit ring */}
         <path
@@ -34,13 +34,13 @@ export default function Logo() {
           className="fill-paper animate-pulse"
         />
         {/* tiny stars */}
-        <circle cx="6" cy="9" r="1.2" className="fill-accent animate-pulse" />
+        <circle cx="6" cy="9" r="1.2" className="fill-brand animate-pulse" />
         <circle cx="10" cy="41" r="1" className="fill-paper/70" />
       </svg>
 
       <span className="flex flex-col items-start leading-none">
         <span className="font-brand text-lg md:text-xl text-paper">Annisaa</span>
-        <span className="-mt-0.5 font-brand text-[10px] tracking-[0.15em] text-accent">
+        <span className="-mt-0.5 font-brand text-[10px] tracking-[0.15em] text-brand">
           SPACE
         </span>
       </span>

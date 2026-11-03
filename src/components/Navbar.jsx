@@ -29,8 +29,8 @@ export default function Navbar() {
                 to={l.to}
                 end
                 className={({ isActive }) =>
-                  `transition-colors hover:text-accent ${
-                    isActive ? 'text-accent' : 'text-paper/70'
+                  `transition-colors hover:text-brand ${
+                    isActive ? 'text-brand' : 'text-paper/70'
                   }`
                 }
               >
@@ -45,7 +45,7 @@ export default function Navbar() {
           onClick={() => setOpen(!open)}
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
-          className="md:hidden w-10 h-10 grid place-items-center text-paper hover:text-accent transition-colors"
+          className="md:hidden w-10 h-10 grid place-items-center text-paper hover:text-brand transition-colors"
         >
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -68,8 +68,8 @@ export default function Navbar() {
                   end
                   onClick={() => setOpen(false)}
                   className={({ isActive }) =>
-                    `block px-6 py-3 transition-colors hover:text-accent ${
-                      isActive ? 'text-accent' : 'text-paper/70'
+                    `block px-6 py-3 transition-colors hover:text-brand ${
+                      isActive ? 'text-brand' : 'text-paper/70'
                     }`
                   }
                 >

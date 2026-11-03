@@ -8,7 +8,7 @@ export default function Contact() {
       <section className="pt-40 pb-24 min-h-[80vh]">
         <div className="max-w-4xl mx-auto px-6">
           <Reveal className="text-center mb-14">
-            <p className="text-accent tracking-[0.3em] uppercase text-xs mb-4">Contact</p>
+            <p className="text-brand tracking-[0.3em] uppercase text-xs mb-4">Contact</p>
             <h2 className="font-display text-4xl sm:text-5xl md:text-6xl mb-6">
               Let's work together
             </h2>
@@ -27,9 +27,9 @@ export default function Contact() {
                     href={s.href}
                     target={external ? '_blank' : undefined}
                     rel={external ? 'noreferrer' : undefined}
-                    className="group flex items-center gap-5 bg-card border border-white/10 p-6 hover:border-accent/60 hover:-translate-y-1 transition-all"
+                    className="group flex items-center gap-5 bg-card border border-white/10 p-6 hover:border-brand/60 hover:-translate-y-1 transition-all"
                   >
-                    <span className="w-12 h-12 shrink-0 grid place-items-center rounded-full bg-accent/10 text-accent group-hover:bg-accent group-hover:text-ink transition-colors">
+                    <span className="w-12 h-12 shrink-0 grid place-items-center rounded-full bg-brand/10 text-brand group-hover:bg-brand group-hover:text-ink transition-colors">
                       <Icon size={20} />
                     </span>
                     <span className="min-w-0">

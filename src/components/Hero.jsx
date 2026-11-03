@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'motion/react'
 import { ArrowDown, User } from 'lucide-react'
+import { buttonVariants } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 
 export default function Hero() {
   const [pos, setPos] = useState(null)
@@ -20,7 +22,7 @@ export default function Hero() {
       className="relative min-h-svh flex items-center overflow-hidden"
     >
       {/* static glow (works on touch devices too) */}
-      <div className="pointer-events-none absolute -top-24 -right-24 w-80 h-80 rounded-full bg-accent/10 blur-3xl" />
+      <div className="pointer-events-none absolute -top-24 -right-24 w-80 h-80 rounded-full bg-brand/10 blur-3xl" />
 
       {/* cursor glow (mouse only) */}
       {pos && (
@@ -37,7 +39,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-accent tracking-[0.3em] uppercase text-xs mb-6"
+          className="text-brand tracking-[0.3em] uppercase text-xs mb-6"
         >
           Informatics engineering student & graphic designer
         </motion.p>
@@ -48,7 +50,7 @@ export default function Hero() {
           className="font-display text-5xl sm:text-6xl md:text-8xl leading-[1.05]"
         >
           Crafting bots, <br />
-          websites & <span className="italic text-accent"><br />Digital Design.</span>
+          websites & <span className="italic text-brand"><br />Digital Design.</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
@@ -71,15 +73,18 @@ export default function Hero() {
         >
           <Link
             to="/portfolio"
-            className="inline-flex items-center gap-2 border border-accent/50 text-accent px-6 py-3 text-sm hover:bg-accent hover:text-ink transition-colors"
+            className={cn(
+              buttonVariants({ variant: 'outline', size: 'lg' }),
+              'rounded-none border-brand/50 bg-transparent text-brand hover:bg-brand hover:text-ink',
+            )}
           >
-            VIEW MY WORK <ArrowDown size={16} />
+            View my work <ArrowDown size={16} />
           </Link>
           <Link
             to="/about"
-            className="inline-flex items-center gap-2 bg-accent text-ink px-6 py-3 text-sm font-medium hover:bg-paper transition-colors"
+            className={cn(buttonVariants({ size: 'lg' }), 'rounded-none')}
           >
-            ABOUT ME <User size={16} />
+            About me <User size={16} />
           </Link>
         </motion.div>
       </div>
