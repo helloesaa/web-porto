@@ -33,7 +33,7 @@ function ProjectImage({ project, className = '' }) {
     <div
       className={`w-full bg-gradient-to-br from-brand/20 via-brand/5 to-transparent flex items-center justify-center text-paper/30 text-sm ${className}`}
     >
-      Project image
+    ONGOING PROJECT
     </div>
   )
 }

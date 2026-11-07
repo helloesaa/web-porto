@@ -43,4 +43,15 @@ export const projects = [
     image: null,
     link: null,
   },
+    {
+    id: 4,
+    category: 'web',
+    title: 'SaiWrite',
+    desc: 'A digital marketplace web project for buying and selling digital goods.',
+    longDesc:
+      'SaiWrite is an ongoing web platform designed for browsing and purchasing digital products. Built with a clean, dark-themed interface to make exploring catalogs and transactions simple and fast.',
+    tags: ['Web App', 'Digital Store', 'Ongoing'],
+    image: null,
+    link: null,
+  },
 ]

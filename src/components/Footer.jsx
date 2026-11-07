@@ -6,7 +6,7 @@ export default function Footer() {
     <footer>
       <div className="max-w-6xl mx-auto px-6 pt-16 pb-8 flex flex-col items-center text-center">
         <Link to="/">
-          <Logo />
+          <Logo className="h-20 md:h-24" />
         </Link>
         <p className="text-paper/50 text-sm mt-5 max-w-sm leading-relaxed">
           Developer & designer building bots, websites and visuals with care.
