@@ -1,4 +1,4 @@
-import { FaInstagram, FaDiscord, FaLinkedinIn } from 'react-icons/fa6'
+import { FaInstagram, FaDiscord, FaLinkedinIn, FaGithub } from 'react-icons/fa6'
 import { Mail } from 'lucide-react'
 
 export const socials = [
@@ -29,5 +29,12 @@ export const socials = [
     handle: 'calllmegee@gmail.com',
     href: 'mailto:calllmegee@gmail.com',
     icon: Mail,
+  },
+  {
+  id: 'GitHub',
+  label: 'GitHub',
+  handle: 'helloesaa',
+  href: 'https://github.com/helloesaa',
+  icon: FaGithub,
   },
 ]
